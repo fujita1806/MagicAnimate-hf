@@ -1,3 +1,8 @@
+
+
+# samples_per_video.appendについて日本語で説明せよ
+
+
 # Copyright 2023 ByteDance and/or its affiliates.
 #
 # Copyright (2023) MagicAnimate Authors
@@ -190,6 +195,16 @@ class MagicAnimate():
 
             os.makedirs(savedir, exist_ok=True)
             save_videos_grid(samples_per_video, animation_path)
-            
+
+            samples_per_video2 = []
+            samples_per_video2.append(sample[:, :, :original_length])
+            samples_per_video2 = torch.cat(samples_per_video2)
+
+            time_str = datetime.datetime.now().strftime("%Y-%m-%dT%H-%M-%S")
+            animation_path = f"{savedir}/{time_str}s.mp4"
+
+            save_videos_grid(samples_per_video2, animation_path)
+
             return animation_path
             
+
