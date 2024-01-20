@@ -1,6 +1,6 @@
 pretrained_model_path: "/content/MagicAnimate-hf/stable-diffusion-v1-5"
 pretrained_vae_path: "/content/MagicAnimate-hf/sd-vae-ft-mse"
-pretrained_controlnet_path: "/content/MagicAnimate-hf/MagicAnimate/openpose_controlnet"
+pretrained_controlnet_path: "/content/MagicAnimate-hf/MagicAnimate/densepose_controlnet"
 pretrained_appearance_encoder_path: "/content/MagicAnimate-hf/MagicAnimate/appearance_encoder"
 pretrained_unet_path: "/content/MagicAnimate-hf/stable-diffusion-v1-5/unet"
 
