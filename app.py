@@ -1,3 +1,9 @@
+import torch
+
+# GPUメモリの割り当てを制限
+torch.backends.cudnn.benchmark = True
+torch.cuda.set_per_process_memory_fraction(0.75)  # 必要に応じて割合を調整
+
 # Copyright 2023 ByteDance and/or its affiliates.
 #
 # Copyright (2023) MagicAnimate Authors
